@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rupee</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>RUPEE</div>
+        <div>NAVIGATION</div>
+        <div class="header-container">
+          <div class="header-container-inner">
+            <h1>How many rupees can you gather?</h1>
+            <p>
+              No dangerous dungeons or boring quests — just free rupees. Click
+              to collect and become Hyrule&apos;s richest hero. That&apos;s it.
+            </p>
+            <a href="#main" class="btn">Start Game</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="container">
+        <div class="container-inner">
+          <div>
+            <svg
+              class="rupee rupee-green"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <g class="" transform="translate(0,0)">
+                <path
+                  d="M247 25.076 107.053 130.004l64.996 32.486L247 106.297v-81.22zm18 0v81.22l74.95 56.194 65-32.488L265 25.076zm9.277 22.307 36.63 26.437c-25.125-4.207-29.74 9.2-37.348 28.8l.717-55.237zm-37.79 3.926-.274 33.362c-22.052 1.182-56.787 14.423-107.893 43.99L236.488 51.31zM256 122.044l-74 55.48v156.948l74 55.482 74-55.482V177.527l-74-55.482zm4.215 17.67c-37.503 33.84-60.642 164.833-63.65 199.094l-.35-151.095 64-48zM99 146.1v219.8l65-32.488V178.588L99 146.1zm314 0-65 32.488v154.824l65 32.488V146.1zm-301.352 23.31 40.473 20.83c-46.28 38.757-30.79 122.693-41.876 162.572l1.404-183.402zm60.4 180.1-64.995 32.486L247 486.924v-81.22l-74.95-56.194zm167.903 0L265 405.703v81.22l139.947-104.927-64.996-32.486zm-169.415 17.172c-19.594 16.282-16.745 24.365 4.477 54.412l-44.246-38.018 39.77-16.394z"
+                ></path>
+              </g>
+            </svg>
+            <h2>Green Rupees</h2>
+            <p class="collection-description">
+              Every green rupee is worth a value of 1
+            </p>
+            <button id="collect-green-rupees" class="btn btn-collect">
+              Collect Rupee
+            </button>
+            <p id="green-rupees-collected" class="collection-status">
+              0 green rupees collected
+            </p>
+          </div>
+
+          <div>
+            <svg
+              class="rupee rupee-blue"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <g class="" transform="translate(0,0)">
+                <path
+                  d="M247 25.076 107.053 130.004l64.996 32.486L247 106.297v-81.22zm18 0v81.22l74.95 56.194 65-32.488L265 25.076zm9.277 22.307 36.63 26.437c-25.125-4.207-29.74 9.2-37.348 28.8l.717-55.237zm-37.79 3.926-.274 33.362c-22.052 1.182-56.787 14.423-107.893 43.99L236.488 51.31zM256 122.044l-74 55.48v156.948l74 55.482 74-55.482V177.527l-74-55.482zm4.215 17.67c-37.503 33.84-60.642 164.833-63.65 199.094l-.35-151.095 64-48zM99 146.1v219.8l65-32.488V178.588L99 146.1zm314 0-65 32.488v154.824l65 32.488V146.1zm-301.352 23.31 40.473 20.83c-46.28 38.757-30.79 122.693-41.876 162.572l1.404-183.402zm60.4 180.1-64.995 32.486L247 486.924v-81.22l-74.95-56.194zm167.903 0L265 405.703v81.22l139.947-104.927-64.996-32.486zm-169.415 17.172c-19.594 16.282-16.745 24.365 4.477 54.412l-44.246-38.018 39.77-16.394z"
+                ></path>
+              </g>
+            </svg>
+            <h2>Blue Rupee</h2>
+            <p class="collection-description">
+              Every blue rupee is worth a value of 5
+            </p>
+            <button id="collect-blue-rupees" class="btn btn-collect">
+              Collect Rupees
+            </button>
+            <p id="blue-rupees-collected" class="collection-status">
+              0 blue rupees collected
+            </p>
+          </div>
+
+          <div>
+            <svg
+              class="rupee rupee-red"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <g class="" transform="translate(0,0)">
+                <path
+                  d="M247 25.076 107.053 130.004l64.996 32.486L247 106.297v-81.22zm18 0v81.22l74.95 56.194 65-32.488L265 25.076zm9.277 22.307 36.63 26.437c-25.125-4.207-29.74 9.2-37.348 28.8l.717-55.237zm-37.79 3.926-.274 33.362c-22.052 1.182-56.787 14.423-107.893 43.99L236.488 51.31zM256 122.044l-74 55.48v156.948l74 55.482 74-55.482V177.527l-74-55.482zm4.215 17.67c-37.503 33.84-60.642 164.833-63.65 199.094l-.35-151.095 64-48zM99 146.1v219.8l65-32.488V178.588L99 146.1zm314 0-65 32.488v154.824l65 32.488V146.1zm-301.352 23.31 40.473 20.83c-46.28 38.757-30.79 122.693-41.876 162.572l1.404-183.402zm60.4 180.1-64.995 32.486L247 486.924v-81.22l-74.95-56.194zm167.903 0L265 405.703v81.22l139.947-104.927-64.996-32.486zm-169.415 17.172c-19.594 16.282-16.745 24.365 4.477 54.412l-44.246-38.018 39.77-16.394z"
+                ></path>
+              </g>
+            </svg>
+            <h2>Red Rupee</h2>
+            <p class="collection-description">
+              Every red rupee is worth a value of 20
+            </p>
+            <button id="collect-red-rupees" class="btn btn-collect">
+              Collect Rupees
+            </button>
+            <p id="red-rupees-collected" class="collection-status">
+              0 red rupees collected
+            </p>
+          </div>
+          <ul>
+            <li class="total-collection-status">
+              Total Collected Rupees <span id="show-score">0</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <div class="container">
+        <h2>More than just rupees...</h2>
+        <div class="transition-box"></div>
+        <p>
+          In this simple yet addictive game, every click earns you a shiny rupee
+          — no monsters, no mazes, just pure treasure. As your stash grows, so
+          does your legend. Become Hyrule&apos;s richest hero without leaving
+          your seat. No grinding, just glory. But here&apos;s the twist: your
+          rupee hoard does more than make you rich — it helps restore balance to
+          the land. Every rupee collected heals ancient forests, brightens
+          forgotten villages, and breathes life back into Hyrule.
+        </p>
+      </div>
+    </section>
+
+    <footer class="container">
+      Copyright © <span id="show-current-year">2020</span> by
+      <a href="https://github.com/maxhabibulin" target="_blank">maxhabibulin</a
+      >. Used for learning purposes only.
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
