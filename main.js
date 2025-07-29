@@ -1,13 +1,13 @@
 "strict";
 
 import CurrentYear from "./modules/current-year.js";
-import GameScore from "/modules/game-score.js";
+import GameScore from "./modules/game-score.js";
 import {
   Collectible,
   GreenRupee,
   BlueRupee,
   RedRupee,
-} from "/modules/collectibles.js";
+} from "./modules/collectibles.js";
 
 const greenRupee = new GreenRupee();
 const blueRupee = new BlueRupee();
